@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Aayushman Chikitsalaya - 60+ Languages</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins','Segoe UI','Noto Sans Devanagari',Arial;background:linear-gradient(135deg,#667eea 0%,#764ba2 50%,#f093fb 100%);min-height:100vh;padding:20px;animation:bgShift 15s ease infinite}
+@keyframes bgShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.credit{background:linear-gradient(135deg,#fff 0%,#f8f9fa 100%);padding:30px;text-align:center;border-radius:20px 20px 0 0;max-width:1200px;margin:0 auto;border-bottom:5px solid #667eea;box-shadow:0 8px 32px rgba(0,0,0,0.3);animation:slideDown 0.8s ease}
+@keyframes slideDown{from{opacity:0;transform:translateY(-50px)}to{opacity:1;transform:translateY(0)}}
+.credit p{margin:8px 0}
+.school{color:#667eea;font-weight:bold;background:linear-gradient(90deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.container{max-width:1200px;margin:0 auto;background:rgba(255,255,255,0.98);border-radius:0 0 25px 25px;padding:50px;box-shadow:0 20px 60px rgba(0,0,0,0.4);backdrop-filter:blur(10px)}
+header{text-align:center;margin-bottom:40px;padding-bottom:30px;border-bottom:4px solid transparent;background:linear-gradient(white,white)padding-box,linear-gradient(90deg,#667eea,#764ba2,#f093fb)border-box;border-radius:15px;animation:fadeIn 1s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+h1{background:linear-gradient(90deg,#667eea,#764ba2,#f093fb);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:3em;margin-bottom:15px;font-weight:700;text-shadow:2px 2px 4px rgba(0,0,0,0.1)}
+.subtitle{color:#666;font-size:1.4em;margin-top:15px;font-weight:500}
+.badge{background:linear-gradient(135deg,#4CAF50 0%,#45a049 100%);color:white;padding:18px 30px;border-radius:50px;text-align:center;font-weight:700;font-size:1.2em;margin:25px auto;max-width:500px;border:4px solid rgba(255,255,255,0.3);box-shadow:0 8px 25px rgba(76,175,80,0.4);animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.section{background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);padding:30px;border-radius:20px;margin:35px 0;border-left:8px solid #667eea;box-shadow:0 5px 20px rgba(0,0,0,0.1);transition:all 0.3s}
+.section:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+.section h3{color:#333;margin-bottom:20px;font-size:1.6em;font-weight:600}
+label{display:block;font-weight:600;margin:18px 0 10px;color:#555;font-size:1.1em}
+select,input[type="text"]{width:100%;padding:16px;font-size:1.05em;border:3px solid #ddd;border-radius:12px;margin-bottom:18px;font-family:inherit;transition:all 0.3s}
+select:focus,input[type="text"]:focus{outline:none;border-color:#667eea;box-shadow:0 0 15px rgba(102,126,234,0.3)}
+select{cursor:pointer;background:white;font-weight:500}
+.file-input-wrapper{position:relative;margin-bottom:18px;display:inline-block;width:100%}
+.hidden-file-input{display:none}
+.file-button{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:16px 30px;border:none;border-radius:12px;cursor:pointer;font-size:1.05em;font-weight:600;width:100%;transition:all 0.3s;box-shadow:0 5px 15px rgba(102,126,234,0.3)}
+.file-button:hover{background:linear-gradient(135deg,#764ba2 0%,#667eea 100%);transform:translateY(-2px);box-shadow:0 8px 20px rgba(102,126,234,0.5)}
+.file-button:active{transform:translateY(0)}
+.file-name{display:block;font-size:0.9em;color:#666;margin-top:8px;padding:8px 12px;background:#f0f4ff;border-radius:8px;word-break:break-all}
+.upload-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px;margin:35px 0}
+.upload-card{background:linear-gradient(135deg,#ffffff 0%,#f8f9fa 100%);padding:30px;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,0.15);border:3px solid transparent;background-clip:padding-box;position:relative;transition:all 0.3s}
+.upload-card::before{content:'';position:absolute;inset:0;border-radius:18px;padding:3px;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-mask:linear-gradient(#fff 0 0)content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0)content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.upload-card:hover{transform:translateY(-8px);box-shadow:0 15px 40px rgba(0,0,0,0.25)}
+.upload-card h4{color:#333;margin-bottom:18px;font-size:1.4em;font-weight:600}
+.preview{margin:18px 0;text-align:center;min-height:220px;display:flex;align-items:center;justify-content:center;border:3px dashed #667eea;border-radius:15px;background:linear-gradient(135deg,#f0f4ff 0%,#e8eeff 100%);font-size:3em;transition:all 0.3s}
+.preview:hover{background:linear-gradient(135deg,#e8eeff 0%,#dde3ff 100%)}
+.preview img{max-width:100%;max-height:280px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.3)}
+.hospital{background:linear-gradient(135deg,#fff3cd 0%,#ffeaa7 100%);padding:35px;margin:35px 0;border-radius:20px;border:4px solid #ffc107;box-shadow:0 8px 30px rgba(255,193,7,0.3);animation:fadeIn 1.2s ease}
+.hospital h3{color:#856404;margin-bottom:25px;font-size:1.8em;font-weight:700}
+.btn{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:22px 55px;border:none;border-radius:15px;font-size:1.6em;cursor:pointer;width:100%;margin:35px 0;font-weight:700;transition:all 0.4s;box-shadow:0 10px 30px rgba(102,126,234,0.4);position:relative;overflow:hidden}
+.btn::before{content:'';position:absolute;top:50%;left:50%;width:0;height:0;border-radius:50%;background:rgba(255,255,255,0.3);transition:width 0.6s,height 0.6s,top 0.6s,left 0.6s;transform:translate(-50%,-50%)}
+.btn:hover::before{width:400px;height:400px}
+.btn:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(102,126,234,0.6)}
+.btn-hospital{background:linear-gradient(135deg,#ff6b6b 0%,#ee5a6f 100%);padding:18px 45px;font-size:1.3em;box-shadow:0 8px 25px rgba(255,107,107,0.4)}
+.btn-hospital:hover{box-shadow:0 12px 35px rgba(255,107,107,0.6)}
+.loading{text-align:center;padding:60px;display:none}
+.loading.show{display:block;animation:fadeIn 0.5s ease}
+.spinner{border:8px solid #f3f3f3;border-top:8px solid #667eea;border-radius:50%;width:80px;height:80px;animation:spin 1s linear infinite;margin:0 auto 30px}
+@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.result{margin-top:45px;padding:45px;background:linear-gradient(135deg,#e3f2fd 0%,#f3e5f5 100%);border-radius:20px;display:none;border:4px solid #667eea;box-shadow:0 10px 35px rgba(0,0,0,0.2)}
+.result.show{display:block;animation:slideUp 0.8s ease}
+@keyframes slideUp{from{opacity:0;transform:translateY(50px)}to{opacity:1;transform:translateY(0)}}
+.result h3{background:linear-gradient(90deg,#1976d2,#667eea);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:30px;font-size:2.2em;text-align:center;font-weight:700}
+.result-content{background:white;padding:40px;border-radius:15px;font-size:1.2em;box-shadow:0 8px 25px rgba(0,0,0,0.15);line-height:2;white-space:pre-wrap}
+footer{margin-top:55px;padding-top:35px;border-top:4px solid #e0e0e0;text-align:center;color:#666;font-weight:500}
+.hospital-list{margin-top:25px;display:none}
+.hospital-list.show{display:block;animation:fadeIn 0.8s ease}
+.hospital-item{background:white;padding:25px;margin:18px 0;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.15);border-left:6px solid #ff6b6b;transition:all 0.3s}
+.hospital-item:hover{transform:translateX(10px);box-shadow:0 8px 30px rgba(0,0,0,0.25)}
+@media (max-width:768px){.container{padding:30px}h1{font-size:2.2em}.upload-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="credit">
+<p style="font-size:1.6em;font-weight:700;color:#667eea;margin-bottom:15px">🏥 Aayushman Chikitsalaya</p>
+<p style="font-size:1.3em;font-weight:600;color:#333;margin-bottom:10px">Mohditya Gautam | Class VII-E</p>
+<p style="font-size:1.15em;margin-bottom:15px"><span class="school">Modern School, New Delhi</span></p>
+<p style="font-size:1em;color:#666;margin-top:10px;font-weight:600">60+ Indian Languages | Made with 🇮🇳</p>
+</div>
+
+<div class="container">
+<header>
+<h1 id="title">🏥 Aayushman Chikitsalaya</h1>
+<p class="subtitle" id="subtitle">आयुष्मान चिकित्सालय 🇮🇳</p>
+</header>
+
+<div class="badge" id="badge">✨ 60+ Languages ✨</div>
+
+<div class="section">
+<h3 id="lang-head">🌐 Language</h3>
+<label id="lang-label">Choose:</label>
+<select id="language" onchange="changeLang()">
+<option value="en">English</option>
+<option value="hi">हिन्दी (Hindi)</option>
+<option value="bn">বাংলা (Bengali)</option>
+<option value="te">తెలుగు (Telugu)</option>
+<option value="mr">मराठी (Marathi)</option>
+<option value="ta">தமிழ் (Tamil)</option>
+<option value="gu">ગુજરાતી (Gujarati)</option>
+<option value="kn">ಕನ್ನಡ (Kannada)</option>
+<option value="ml">മലയാളം (Malayalam)</option>
+<option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+<option value="or">ଓଡ଼ିଆ (Odia)</option>
+<option value="as">অসমীয়া (Assamese)</option>
+<option value="ur">اردو (Urdu)</option>
+<option value="sa">संस्कृतम् (Sanskrit)</option>
+<option value="pra">प्राकृतम् (Prakrit)</option>
+<option value="ks">कॉशुर (Kashmiri)</option>
+<option value="ne">नेपाली (Nepali)</option>
+<option value="sd">सिन्धी (Sindhi)</option>
+<option value="kok">कोंकणी (Konkani)</option>
+<option value="mai">मैथिली (Maithili)</option>
+<option value="mni">মৈতৈলোন্ (Manipuri)</option>
+<option value="brx">बड़ो (Bodo)</option>
+<option value="doi">डोगरी (Dogri)</option>
+<option value="sat">ᱥᱟᱱᱛᱟᱲᱤ (Santali)</option>
+<option value="bho">भोजपुरी (Bhojpuri)</option>
+<option value="raj">राजस्थानी (Rajasthani)</option>
+<option value="hne">छत्तीसगढ़ी (Chhattisgarhi)</option>
+<option value="awa">अवधी (Awadhi)</option>
+<option value="mag">मगही (Magahi)</option>
+<option value="anp">अंगिका (Angika)</option>
+<option value="bfy">बज्जिका (Bajjika)</option>
+<option value="bun">बुन्देली (Bundeli)</option>
+<option value="kfy">कुमाऊँनी (Kumaoni)</option>
+<option value="gbm">गढ़वळि (Garhwali)</option>
+<option value="tcy">ತುಳು (Tulu)</option>
+<option value="kfa">Kodava</option>
+<option value="kha">Khasi</option>
+<option value="lus">Mizo</option>
+<option value="trp">Kokborok</option>
+<option value="ajz">Karbi</option>
+<option value="hoc">Ho</option>
+<option value="unr">Mundari</option>
+<option value="kru">Kurukh</option>
+<option value="gon">గోండీ (Gondi)</option>
+<option value="lmn">లంబాడీ (Lambadi/Banjara)</option>
+<option value="lep">Lepcha</option>
+<option value="lif">Limbu</option>
+<option value="njm">Angami</option>
+<option value="gju">गुज्जरी (Gujjari)</option>
+<option value="kfr">કચ્છી (Kachhi/Kutchi)</option>
+<option value="rkt">কামতাপুরী (Kamtapuri)</option>
+<option value="kyw">कुड़माली (Kurmali)</option>
+<option value="lbj">Ladakhi</option>
+<option value="pli">पालि (Pali)</option>
+<option value="sck">नागपुरी (Sadri)</option>
+<option value="sip">སི་ཀི་མེས་ (Sikkimese)</option>
+<option value="nic">Nicobarese</option>
+<option value="skr">سرائیکی (Saraiki)</option>
+<option value="unx">ସମ୍ବଲପୁରୀ (Sambalpuri)</option>
+<option value="dha">धातकी (Dhatki)</option>
+<option value="hil">पहाड़ी (Himachali/Pahadi)</option>
+</select>
+</div>
+
+<div class="upload-grid">
+<div class="upload-card">
+<h4 id="u1-title">📸 Image 1</h4>
+<label id="d1-label">Description:</label>
+<input type="text" id="desc1" placeholder="e.g., Tongue">
+<label id="i1-label">Upload:</label>
+<div class="file-input-wrapper">
+<input type="file" id="img1" class="hidden-file-input" accept="image/*" onchange="preview(1)">
+<button class="file-button" onclick="document.getElementById('img1').click()">📁 Choose File</button>
+<span class="file-name" id="fileName1">No file chosen</span>
+</div>
+<div id="prev1" class="preview">📷</div>
+</div>
+
+<div class="upload-card">
+<h4 id="u2-title">📸 Image 2</h4>
+<label id="d2-label">Description:</label>
+<input type="text" id="desc2" placeholder="e.g., Hand">
+<label id="i2-label">Upload:</label>
+<div class="file-input-wrapper">
+<input type="file" id="img2" class="hidden-file-input" accept="image/*" onchange="preview(2)">
+<button class="file-button" onclick="document.getElementById('img2').click()">📁 Choose File</button>
+<span class="file-name" id="fileName2">No file chosen</span>
+</div>
+<div id="prev2" class="preview">📷</div>
+</div>
+</div>
+
+<div class="hospital">
+<h3 id="hosp-head">🏥 Hospitals</h3>
+<button class="btn btn-hospital" id="hosp-btn" onclick="findHosp()">🗺️ Find</button>
+<div id="hosp-list" class="hospital-list"></div>
+</div>
+<!-- ✅ SYMPTOMS SECTION - ADD THIS -->
+<div style="margin: 25px 0; padding: 20px; background: linear-gradient(135deg, #fff9e6 0%, #fffbf0 100%); border-radius: 15px; border-left: 5px solid #ffa502; box-shadow: 0 3px 10px rgba(255, 165, 2, 0.1);">
+    <h3 style="color: #d97706; margin-bottom: 10px; font-size: 1.2em;">
+        💬 <span id="symptomsTitle">अपने लक्षण बताएं (वैकल्पिक) | Describe Your Symptoms (Optional)</span>
+    </h3>
+    <p style="color: #92400e; font-size: 0.9em; margin-bottom: 15px;" id="symptomsDesc">
+        यदि आप कोई लक्षण महसूस कर रहे हैं तो यहाँ बताएं।
+    </p>
+    <textarea 
+        id="symptomsInput" 
+        placeholder="उदाहरण: बुखार, सिरदर्द, पेट दर्द..." 
+        style="width: 100%; padding: 15px; border: 2px solid #ffa502; border-radius: 10px; font-size: 1em; resize: vertical; min-height: 100px;"
+    ></textarea>
+</div>
+
+
+<button class="btn" id="analyze-btn" onclick="analyze()">🔬 Analyze</button>
+
+<div class="loading" id="loading">
+<div class="spinner"></div>
+<p id="load-text" style="font-size:1.4em;color:#667eea;font-weight:700">🤖 Analyzing...</p>
+</div>
+
+<div class="result" id="result">
+<h3 id="result-head">📋 Report</h3>
+<div class="result-content" id="result-content"></div>
+</div>
+
+<footer>
+<p style="font-size:1.4em;font-weight:700">Aayushman Chikitsalaya 🇮🇳</p>
+<p style="margin-top:10px;font-size:1em">Mohditya Gautam | Modern School</p>
+</footer>
+</div>
+
+<script>
+
+
+
+let currentModelIndex = 0;
+const GEMINI_API_KEY = 'AIzaSyDQMwKOxwCNHzno4MLLqNFdF69OTRrCMMM';
+
+function getGeminiURL() {
+    return `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODELS[currentModelIndex]}:generateContent`;
+}
+
+function switchToNextModel() {
+    currentModelIndex = (currentModelIndex + 1) % GEMINI_MODELS.length;
+    console.log(`Switched to: ${GEMINI_MODELS[currentModelIndex]}`);
+}
+
+const L={
+en:{t:"🏥 Aayushman Chikitsalaya",s:"आयुष्मान चिकित्सालय 🇮🇳",b:"✨ 60+ Languages ✨",lh:"🌐 Language",ll:"Choose:",u1:"📸 Image 1",u2:"📸 Image 2",d1:"Description:",d2:"Description:",i1:"Upload:",i2:"Upload:",hh:"🏥 Hospitals",hb:"🗺️ Find",ab:"🔬 Analyze",lt:"🤖 Analyzing...",rh:"📋 Report",hl:"Hospital:",dist:"Distance:",ph:"Phone:",na:"N/A",em:"Emergency:"},
+hi:{t:"🏥 आयुष्मान चिकित्सालय",s:"आयुष्मान चिकित्सालय 🇮🇳",b:"✨ 60+ भाषाएँ ✨",lh:"🌐 भाषा",ll:"चुनें:",u1:"📸 चित्र 1",u2:"📸 चित्र 2",d1:"विवरण:",d2:"विवरण:",i1:"अपलोड:",i2:"अपलोड:",hh:"🏥 अस्पताल",hb:"🗺️ खोजें",ab:"🔬 विश्लेषण करें",lt:"🤖 विश्लेषण हो रहा है...",rh:"📋 रिपोर्ट",hl:"अस्पताल:",dist:"दूरी:",ph:"फोन:",na:"उपलब्ध नहीं",em:"आपातकाल:"},
+bn:{t:"🏥 আযুষ্মান চিকিৎসালয়",s:"আযুষ্মান চিকিৎসালয় 🇮🇳",b:"✨ 60+ ভাষা ✨",lh:"🌐 ভাষা",ll:"বেছে নিন:",u1:"📸 ছবি 1",u2:"📸 ছবি 2",d1:"বর্ণনা:",d2:"বর্ণনা:",i1:"আপলোড:",i2:"আপলোড:",hh:"🏥 হাসপাতাল",hb:"🗺️ খুঁজুন",ab:"🔬 বিশ্লেষণ করুন",lt:"🤖 বিশ্লেষণ চলছে...",rh:"📋 রিপোর্ট",hl:"হাসপাতাল:",dist:"দূরত্ব:",ph:"ফোন:",na:"প্রযোজ্য নয়",em:"জরুরি:"},
+te:{t:"🏥 ఆయుష్మాన్ చికిత్సాలయ",s:"ఆయుష్మాన్ చికిత్సాలయ 🇮🇳",b:"✨ 60+ భాషలు ✨",lh:"🌐 భాష",ll:"ఎంచుకోండి:",u1:"📸 చిత్రం 1",u2:"📸 చిత్రం 2",d1:"వివరణ:",d2:"వివరణ:",i1:"అప్‌లోడ్:",i2:"అప్‌లోడ్:",hh:"🏥 ఆసుపత్రులు",hb:"🗺️ కనుగొనండి",ab:"🔬 విశ్లేషించండి",lt:"🤖 విశ్లేషిస్తోంది...",rh:"📋 నివేదిక",hl:"ఆసుపత్రి:",dist:"దూరం:",ph:"ఫోన్:",na:"అందుబాటులో లేదు",em:"అత్యవసరం:"},
+mr:{t:"🏥 आयुष्मान चिकित्सालय",s:"आयुष्मान चिकित्सालय 🇮🇳",b:"✨ 60+ भाषा ✨",lh:"🌐 भाषा",ll:"निवडा:",u1:"📸 चित्र 1",u2:"📸 चित्र 2",d1:"वर्णन:",d2:"वर्णन:",i1:"अपलोड:",i2:"अपलोड:",hh:"🏥 रुग्णालय",hb:"🗺️ शोधा",ab:"🔬 विश्लेषण करा",lt:"🤖 विश्लेषण चालू...",rh:"📋 अहवाल",hl:"रुग्णालय:",dist:"अंतर:",ph:"फोन:",na:"उपलब्ध नाही",em:"आपत्कालीन:"},
+ta:{t:"🏥 ஆயுஷ்மான் சிகிச்சாலயா",s:"ஆயுஷ்மான் சிகிச்சாலயா 🇮🇳",b:"✨ 60+ மொழிகள் ✨",lh:"🌐 மொழி",ll:"தேர்ந்தெடு:",u1:"📸 படம் 1",u2:"📸 படம் 2",d1:"விளக்கம்:",d2:"விளக்கம்:",i1:"பதிவேற்று:",i2:"பதிவேற்று:",hh:"🏥 மருத்துவமனைகள்",hb:"🗺️ கண்டுபிடி",ab:"🔬 பகுப்பாய்வு செய்",lt:"🤖 பகுப்பாய்வு...",rh:"📋 அறிக்கை",hl:"மருத்துவமனை:",dist:"தூரம்:",ph:"தொலைபேசி:",na:"கிடைக்கவில்லை",em:"அவசரம்:"},
+gu:{t:"🏥 આયુષ્માન ચિકિત્સાલય",s:"આયુષ્માન ચિકિત્સાલય 🇮🇳",b:"✨ 60+ ભાષાઓ ✨",lh:"🌐 ભાષા",ll:"પસંદ કરો:",u1:"📸 ચિત્ર 1",u2:"📸 ચિત્ર 2",d1:"વર્ણન:",d2:"વર્ણન:",i1:"અપલોડ:",i2:"અપલોડ:",hh:"🏥 હોસ્પિટલો",hb:"🗺️ શોધો",ab:"🔬 વિશ્લેષણ કરો",lt:"🤖 વિશ્લેષણ...",rh:"📋 અહેવાલ",hl:"હોસ્પિટલ:",dist:"અંતર:",ph:"ફોન:",na:"ઉપલબ્ધ નથી",em:"કટોકટી:"},
+kn:{t:"🏥 ಆಯುಷ್ಮಾನ್ ಚಿಕಿತ್ಸಾಲಯ",s:"ಆಯುಷ್ಮಾನ್ ಚಿಕಿತ್ಸಾಲಯ 🇮🇳",b:"✨ 60+ ಭಾಷೆಗಳು ✨",lh:"🌐 ಭಾಷೆ",ll:"ಆಯ್ಕೆಮಾಡಿ:",u1:"📸 ಚಿತ್ರ 1",u2:"📸 ಚಿತ್ರ 2",d1:"ವಿವರಣೆ:",d2:"ವಿವರಣೆ:",i1:"ಅಪ್‌ಲೋಡ್:",i2:"ಅಪ್‌ಲೋಡ್:",hh:"🏥 ಆಸ್ಪತ್ರೆಗಳು",hb:"🗺️ ಹುಡುಕಿ",ab:"🔬 ವಿಶ್ಲೇಷಣೆ ಮಾಡಿ",lt:"🤖 ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ...",rh:"📋 ವರದಿ",hl:"ಆಸ್ಪತ್ರೆ:",dist:"ದೂರ:",ph:"ದೂರವಾಣಿ:",na:"ಲಭ್ಯವಿಲ್ಲ",em:"ತುರ್ತು:"},
+ml:{t:"🏥 ആയുഷ്മാന് ചികിത്സാലയ",s:"ആയുഷ്മാന് ചികിത്സാലയ 🇮🇳",b:"✨ 60+ ഭാഷകൾ ✨",lh:"🌐 ഭാഷ",ll:"തിരഞ്ഞെടുക്കുക:",u1:"📸 ചിത്രം 1",u2:"📸 ചിത്രം 2",d1:"വിവരണം:",d2:"വിവരണം:",i1:"അപ്‌ലോഡ്:",i2:"അപ്‌ലോഡ്:",hh:"🏥 ആശുപത്രികൾ",hb:"🗺️ കണ്ടെത്തുക",ab:"🔬 വിശകലനം ചെയ്യുക",lt:"🤖 വിശകലനം...",rh:"📋 റിപ്പോർട്ട്",hl:"ആശുപത്രി:",dist:"ദൂരം:",ph:"ഫോൻ:",na:"ലഭ്യമല്ല",em:"അടിയന്തിരം:"},
+pa:{t:"🏥 ਆਯੁਸ਼ਮਾਨ ਚਿਕਿਤਸਾਲਿਆ",s:"ਆਯੁਸ਼ਮਾਨ ਚਿਕਿਤਸਾਲਿਆ 🇮🇳",b:"✨ 60+ ਭਾਸ਼ਾਵਾਂ ✨",lh:"🌐 ਭਾਸ਼ਾ",ll:"ਚੁਣੋ:",u1:"📸 ਤਸਵੀਰ 1",u2:"📸 ਤਸਵੀਰ 2",d1:"ਵੇਰਵਾ:",d2:"ਵੇਰਵਾ:",i1:"ਅਪਲੋਡ:",i2:"ਅਪਲੋਡ:",hh:"🏥 ਹਸਪਤਾਲ",hb:"🗺️ ਲੱਭੋ",ab:"🔬 ਵਿਸ਼ਲੇਸ਼ਣ ਕਰੋ",lt:"🤖 ਵਿਸ਼ਲੇਸ਼ਣ...",rh:"📋 ਰਿਪੋਰਟ",hl:"ਹਸਪਤਾਲ:",dist:"ਦੂਰੀ:",ph:"ਫੋਨ:",na:"ਉਪਲਬਧ ਨਹੀਂ",em:"ਐਮਰਜੈਂਸੀ:"},
+or:{t:"🏥 ଆୟୁଷ୍ମାନ ଚିକିତ୍ସାଳୟ",s:"ଆୟୁଷ୍ମାନ ଚିକିତ୍ସାଳୟ 🇮🇳",b:"✨ 60+ ଭାଷା ✨",lh:"🌐 ଭାଷା",ll:"ବାଛନ୍ତୁ:",u1:"📸 ଚିତ୍ର 1",u2:"📸 ଚିତ୍ର 2",d1:"ବର୍ଣ୍ଣନା:",d2:"ବର୍ଣ୍ଣନା:",i1:"ଅପଲୋଡ୍:",i2:"ଅପଲୋଡ୍:",hh:"🏥 ଡାକ୍ତରଖାନା",hb:"🗺️ ଖୋଜନ୍ତୁ",ab:"🔬 ବିଶ୍ଳେଷଣ କରନ୍ତୁ",lt:"🤖 ବିଶ୍ଳେଷଣ...",rh:"📋 ରିପୋର୍ଟ",hl:"ଡାକ୍ତରଖାନା:",dist:"ଦୂରତା:",ph:"ଫୋନ୍:",na:"ଉପଲବ୍ଧ ନାହିଁ",em:"ଜରୁରୀକାଳୀନ:"},
+as:{t:"🏥 আয়ুষ্मान চিকিৎসালয়",s:"আয়ুষ্मान চিকিৎসালয় 🇮🇳",b:"✨ 60+ ভাষा ✨",lh:"🌐 ভাষা",ll:"বাছনি কৰক:",u1:"📸 ছবি 1",u2:"📸 ছবি 2",d1:"বিৱৰণ:",d2:"বিৱৰণ:",i1:"আपलोड:",i2:"আपलोड:",hh:"🏥 चिकिৎসালय",hb:"🗺️ বিচাৰক",ab:"🔬 বिश्लेষण কৰक",lt:"🤖 বिश्लेषण...",rh:"📋 প্ৰতिवेदन",hl:"चिकिৎसालय:",dist:"দূৰत্ব:",ph:"ফোन:",na:"उपलব्ध नহয়",em:"জৰुруरीকालीন:"},
+ur:{t:"🏥 آیوشمان چکتسالیہ",s:"آیوشمان چکتسالیہ 🇮🇳",b:"✨ 60+ زبانیں ✨",lh:"🌐 زبان",ll:"منتخب کریں:",u1:"📸 تصویر 1",u2:"📸 تصویر 2",d1:"تفصیل:",d2:"تفصیل:",i1:"اپ لوڈ:",i2:"اپ لوڈ:",hh:"🏥 ہسپتال",hb:"🗺️ تلاش کریں",ab:"🔬 تجزیہ کریں",lt:"🤖 تجزیہ ہو رہا ہے...",rh:"📋 رپورٹ",hl:"ہسپتال:",dist:"فاصلہ:",ph:"فون:",na:"دستیاب نہیں",em:"ہنگامی:"},
+sa:{t:"🏥 आयुष्मान् चिकित्सालयः",s:"आयुष्मान् चिकित्सालयः 🇮🇳",b:"✨ 60+ भाषाः ✨",lh:"🌐 भाषा",ll:"चिनोतु:",u1:"📸 चित्रम् 1",u2:"📸 चित्रम् 2",d1:"विवरणम्:",d2:"विवरणम्:",i1:"उपारोपणम्:",i2:"उपारोपणम्:",hh:"🏥 चिकित्सालयः",hb:"🗺️ अन्विष्यताम्",ab:"🔬 विश्लेषणं करोतु",lt:"🤖 विश्लेषणम्...",rh:"📋 प्रतिवेदनम्",hl:"चिकित्सालयः:",dist:"दूरम्:",ph:"दूरवाणी:",na:"न उपलब्धम्",em:"आपातकालः:"},
+pra:{t:"🏥 अज्झमाण चिकित्थालओ",s:"अज्झमाण चिकित्थालओ 🇮🇳",b:"✨ 60+ भासा ✨",lh:"🌐 भासा",ll:"चुणहु:",u1:"📸 चित्तं 1",u2:"📸 चित्तं 2",d1:"विवरणं:",d2:"विवरणं:",i1:"उप्पलोडो:",i2:"उप्पलोडो:",hh:"🏥 चिकित्थालओ",hb:"🗺️ खोज्जहु",ab:"🔬 विस्लेसणं करिज्जउ",lt:"🤖 विस्लेसणं...",rh:"📋 रिपोट्टो",hl:"चिकित्थालओ:",dist:"दूरो:",ph:"फोणो:",na:"ण लब्भइ",em:"आपत्ति:"}
+};
+
+// Fallback for other languages
+for(let k of['ks','ne','sd','kok','mai','mni','brx','doi','sat','bho','raj','hne','awa','mag','anp','bfy','bun','kfy','gbm','tcy','kfa','kha','lus','trp','ajz','hoc','unr','kru','gon','lmn','lep','lif','njm','gju','kfr','rkt','kyw','lbj','pli','sck','sip','nic','skr','unx','dha','hil'])L[k]=L.en;
+
+let hospitalData=[];
+
+function changeLang(){
+const l=document.getElementById('language').value;
+const t=L[l]||L.en;
+document.getElementById('title').textContent=t.t;
+document.getElementById('subtitle').textContent=t.s;
+document.getElementById('badge').textContent=t.b;
+document.getElementById('lang-head').textContent=t.lh;
+document.getElementById('lang-label').textContent=t.ll;
+document.getElementById('u1-title').textContent=t.u1;
+document.getElementById('u2-title').textContent=t.u2;
+document.getElementById('d1-label').textContent=t.d1;
+document.getElementById('d2-label').textContent=t.d2;
+document.getElementById('i1-label').textContent=t.i1;
+document.getElementById('i2-label').textContent=t.i2;
+document.getElementById('hosp-head').textContent=t.hh;
+document.getElementById('hosp-btn').textContent=t.hb;
+document.getElementById('analyze-btn').textContent=t.ab;
+document.getElementById('load-text').textContent=t.lt;
+document.getElementById('result-head').textContent=t.rh;
+if(hospitalData.length>0)renderHospitals();
+}
+
+function preview(n){
+const f=document.getElementById('img'+n).files[0];
+const p=document.getElementById('prev'+n);
+const fn=document.getElementById('fileName'+n);
+if(f){
+if(f.size>10*1024*1024){alert('Max 10MB');return}
+fn.textContent=f.name;
+const r=new FileReader();
+r.onload=(e)=>{p.innerHTML=`<img src="${e.target.result}">`};
+r.readAsDataURL(f);
+}else{
+p.innerHTML='📷';
+fn.textContent='No file chosen';
+}
+}
+
+function calcDist(lat1,lon1,lat2,lon2){
+const R=6371;
+const dLat=(lat2-lat1)*Math.PI/180;
+const dLon=(lon2-lon1)*Math.PI/180;
+const a=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)*Math.sin(dLon/2);
+const c=2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+return(R*c).toFixed(2);
+}
+
+function renderHospitals(){
+const l=document.getElementById('language').value;
+const t=L[l]||L.en;
+const list=document.getElementById('hosp-list');
+list.classList.add('show');
+list.innerHTML=`<h4 style="color:#856404;margin:25px 0 20px;font-size:1.5em;font-weight:700">📍 ${t.hl}</h4>`;
+hospitalData.forEach((h,i)=>{
+list.innerHTML+=`<div class="hospital-item"><div style="font-size:1.4em;font-weight:700;color:#333;margin-bottom:12px">${i+1}. ${h.name}</div><div style="color:#666;line-height:2;font-size:1.05em">📍 ${h.addr}<br>📏 ${t.dist} <strong>~${h.dist} km</strong><br>📞 ${t.ph} <strong>${h.phone}</strong><br>🗺️ <a href="${h.maps}" target="_blank" style="color:#667eea;font-weight:700;text-decoration:none">Google Maps →</a></div></div>`;
+});
+list.innerHTML+=`<p style="margin-top:25px;text-align:center;color:#856404;font-weight:700;font-size:1.2em;padding:15px;background:rgba(255,255,255,0.6);border-radius:10px">🚨 ${t.em} <strong style="color:#d32f2f;font-size:1.3em">108</strong></p>`;
+}
+
+async function findHosp(){
+const l=document.getElementById('language').value;
+const t=L[l]||L.en;
+const list=document.getElementById('hosp-list');
+list.style.display='block';
+list.innerHTML=`<p style="text-align:center;color:#856404;font-size:1.2em;font-weight:600;padding:20px">🗺️ ${t.hb}...</p>`;
+
+if(!navigator.geolocation){
+list.innerHTML=`<p style="color:#d32f2f;text-align:center;padding:20px;font-size:1.1em">${t.na}</p>`;
+return;
+}
+
+navigator.geolocation.getCurrentPosition(async(pos)=>{
+const lat=pos.coords.latitude;
+const lng=pos.coords.longitude;
+list.innerHTML=`<p style="text-align:center;color:#856404;font-size:1.2em;font-weight:600;padding:20px">📍 ${t.hb}...</p>`;
+
+try{
+const query=`[out:json];(node["amenity"="hospital"](around:5000,${lat},${lng});way["amenity"="hospital"](around:5000,${lat},${lng}););out center;`;
+const url=`https://overpass-api.de/api/interpreter?data=${encodeURIComponent(query)}`;
+const response=await fetch(url);
+const data=await response.json();
+
+if(data.elements&&data.elements.length>0){
+hospitalData=data.elements.slice(0,10).map((h,i)=>{
+const name=h.tags?.name||`${t.hl} ${i+1}`;
+const addr=h.tags?.['addr:full']||h.tags?.['addr:street']||t.na;
+const phone=h.tags?.phone||t.na;
+const hlat=h.lat||h.center?.lat||lat;
+const hlng=h.lon||h.center?.lon||lng;
+const dist=calcDist(lat,lng,hlat,hlng);
+const maps=`https://www.google.com/maps/dir/?api=1&destination=${hlat},${hlng}`;
+return{name,addr,phone,dist,maps};
+});
+renderHospitals();
+}else{
+list.innerHTML=`<p style="color:#856404;text-align:center;padding:20px;font-size:1.1em">${t.na}</p>`;
+}
+}catch(error){
+list.innerHTML=`<p style="color:#d32f2f;text-align:center;padding:20px;font-size:1.1em">${t.na}</p>`;
+}
+},()=>{
+list.innerHTML=`<p style="color:#d32f2f;text-align:center;padding:20px;font-size:1.1em">⚠️ ${t.na}<br><br>🚨 ${t.em} <strong style="font-size:1.3em">108</strong></p>`;
+},{timeout:10000});
+}
+
+async function analyze(){
+const img1=document.getElementById('img1').files[0];
+const img2=document.getElementById('img2').files[0];
+const desc1=document.getElementById('desc1').value;
+const desc2=document.getElementById('desc2').value;
+const language=document.getElementById('language').value;
+
+if(!img1){alert('Upload Image 1!');return}
+
+document.getElementById('loading').classList.add('show');
+document.getElementById('result').classList.remove('show');
+
+const formData=new FormData();
+formData.append('bodyImage1',img1);
+formData.append('bodyDesc1',desc1||'Medical image 1');
+if(img2){
+formData.append('bodyImage2',img2);
+formData.append('bodyDesc2',desc2||'Medical image 2');
+}
+formData.append('language',language);
+
+try{
+const response=await fetch('/analyze',{method:'POST',body:formData});
+const data=await response.json();
+document.getElementById('loading').classList.remove('show');
+
+if(data.success){
+let formatted=data.analysis.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/###\s*(.*?)(\n|$)/g,'<h4 style="color:#667eea;margin-top:20px;font-weight:700">$1</h4>').replace(/\n\n/g,'<p></p>');
+document.getElementById('result-content').innerHTML=formatted;
+document.getElementById('result').classList.add('show');
+document.getElementById('result').scrollIntoView({behavior:'smooth'});
+}else{
+alert('Error: '+data.error);
+}
+}catch(error){
+document.getElementById('loading').classList.remove('show');
+alert('Error: '+error.message);
+}
+}
+</script>
+</body>
+</html>
