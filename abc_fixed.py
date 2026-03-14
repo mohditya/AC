@@ -12,6 +12,9 @@ from flask import send_from_directory
 @app.route('/manifest.json')
 def serve_manifest():
     return send_from_directory('.', 'manifest.json')
+@app.route('/icon.png')
+def serve_icon():
+    return send_from_directory('.', 'icon.png')
 # Configure Gemini API with your key from Environment Variables
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 
