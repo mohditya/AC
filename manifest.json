@@ -1,0 +1,13 @@
+{
+  "background_color": "#890010",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "आयुष्मानChikitsalaya",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "चिकित्सालय | Chikitsalaya",
+  "start_url": "/",
+  "theme_color": "#1384b7",
+  "id": "aayushman-app",
+  "description": "Healthcare, incorporated as in by three factual institutions - the National Emblem, Modern School (New Delhi) and the Red Cross and the Aayushman Bharat scheme inferred by the Hon'ble Prime Minister of India, Shri Narendra Modi."
+}
