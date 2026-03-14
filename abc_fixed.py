@@ -7,7 +7,11 @@ import time
 import traceback
 
 app = Flask(__name__)
+from flask import send_from_directory
 
+@app.route('/manifest.json')
+def serve_manifest():
+    return send_from_directory('.', 'manifest.json')
 # Configure Gemini API with your key from Environment Variables
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
 
