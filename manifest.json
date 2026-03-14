@@ -9,5 +9,15 @@
   "start_url": "/",
   "theme_color": "#1384b7",
   "id": "aayushman-app",
-  "description": "Healthcare, incorporated as in by three factual institutions - the National Emblem, Modern School (New Delhi) and the Red Cross and the Aayushman Bharat scheme inferred by the Hon'ble Prime Minister of India, Shri Narendra Modi."
+  "description": "Healthcare, incorporated as in by three factual institutions - the National Emblem, Modern School (New Delhi) and the Red Cross and the Aayushman Bharat scheme inferred by the Hon'ble Prime Minister of India, Shri Narendra Modi.",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+  
+  
 }
