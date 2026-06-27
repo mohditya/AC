@@ -385,23 +385,33 @@ formData.append('bodyDesc2',desc2||'Medical image 2');
 }
 formData.append('language',language);
 
-try{
-const response=await fetch('/analyze',{method:'POST',body:formData});
-const data=await response.json();
-document.getElementById('loading').classList.remove('show');
+try {
+            const response = await fetch('/analyze', {method: 'POST', body: formData});
+            
+            // 1. ADD THIS CHECK: Did the server crash?
+            if (!response.ok) {
+                throw new Error(`Server Error: ${response.status}`);
+            }
 
-if(data.success){
-let formatted=data.analysis.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/###\s*(.*?)(\n|$)/g,'<h4 style="color:#667eea;margin-top:20px;font-weight:700">$1</h4>').replace(/\n\n/g,'<p></p>');
-document.getElementById('result-content').innerHTML=formatted;
-document.getElementById('result').classList.add('show');
-document.getElementById('result').scrollIntoView({behavior:'smooth'});
-}else{
-alert('Error: '+data.error);
-}
-}catch(error){
-document.getElementById('loading').classList.remove('show');
-alert('Error: '+error.message);
-}
+            const data = await response.json();
+            document.getElementById('loading').classList.remove('show');
+
+            if (data.success) {
+                let formatted = data.analysis.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/###\s*(.*?)(\n|$)/g, '<h4 style="color:#667eea;margin-top:20px;font-weight:700">$1</h4>');
+                document.getElementById('result-content').innerHTML = formatted;
+                document.getElementById('result').classList.add('show');
+                document.getElementById('result').scrollIntoView({behavior: 'smooth'});
+            } else {
+                alert('Error: ' + data.error);
+            }
+            
+        } catch (error) {
+            document.getElementById('loading').classList.remove('show');
+            console.error("Analysis Failed:", error); 
+            
+            // 2. YOUR GRACEFUL MESSAGE GOES HERE
+            alert("माफ़ करें, अभी सर्वर पर बहुत अधिक लोड है। कृपया थोड़ी देर बाद पुनः प्रयास करें।\n\n(Sorry, the server is currently overloaded. Please try again later.)");
+        }
 }
 </script>
 </body>
